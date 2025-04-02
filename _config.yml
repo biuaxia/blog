@@ -3,18 +3,22 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Java 开发日志
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: biuaxia
+# Ref: https://keep-docs.xpoet.cn/advanced/set-language.html
+# language: zh-Hans
+language: zh-CN
+# Ref: https://github.com/moment/moment-timezone/blob/develop/data/packed/latest.json
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
+url: https://www.javer.vip
+# permalink: :year/:month/:day/:title/
+permalink: :permalink
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -45,12 +49,14 @@ relative_link: false
 future: true
 syntax_highlighter: highlight.js
 highlight:
+  enable: true
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
+  enable: false
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -103,3 +109,19 @@ theme: keep
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# Ref: https://keep-docs.xpoet.cn/basis/configuration-guide/local_search.html
+search:
+  path: search.json
+  field: post
+  content: true
+  format: striptags
+
+# Ref: https://keep-docs.xpoet.cn/basis/configuration-guide/rss.html
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+# Ref: https://keep-docs.xpoet.cn/advanced/assets-compress.html
+# all_minifier: true
