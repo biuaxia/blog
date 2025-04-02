@@ -1,0 +1,14 @@
+.post-page-container
+  .post-content-container
+  .post-content-bottom
+  .post-content {
+  word-break: break-all;
+}
+
+.home-content-container
+  .home-post-list
+  .home-post-item
+  .home-post-item-bottom
+  .home-post-content {
+  word-break: break-all !important;
+}
